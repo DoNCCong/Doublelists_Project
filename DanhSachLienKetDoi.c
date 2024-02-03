@@ -153,7 +153,7 @@ void demo(){
 		case 3:{
 			int id;
 			Display_List_Graphic();
-			printf("Lua chon danh sach ma ban muon chen phan tu vua moi tao truoc do, id bat dau tu 1\n");
+			printf("Choose the list which you want to insert the head of the list, 'id' start from 1\n");
 			scanf("%d",&id);
 			InsertFirst(ds_list_items[id-1],pTemp);
 			break;
@@ -161,7 +161,7 @@ void demo(){
 		case 4:{
 			int id;
 			Display_List_Graphic();
-			printf("Lua chon danh sach ma ban muon chen phan tu vua moi tao truoc do, id bat dau tu 1\n");
+			printf("Choose the list which you want to insert the back of the list, 'id' start from 1\n");
 			scanf("%d",&id);
 			InsertLast(ds_list_items[id-1],pTemp);
 			break;
@@ -169,11 +169,11 @@ void demo(){
 		case 5:{
 			int id,dk,value_int;char value_chuoi[20] =""; 
 			Display_List_Graphic();
-			printf("Lua chon danh sach ma ban muon chen phan tu vua moi tao truoc do, id bat dau tu 1\n");
+			printf("Choose the list which you want to insert behind of the node, 'id' start from 1\n");
 			scanf("%d",&id);
-			printf("Nhap vao gia tri can lua chon 1->4.\n");
+			printf("Input the values 1->4.\n");
 			scanf("%d",&dk);
-			printf("Nhap gia tri.\n");
+			printf("Input the values.\n");
 			switch (dk)
 			{
 			case 1:{
@@ -206,7 +206,7 @@ void demo(){
 		case 6:{
 			int id;
 			Display_List_Graphic();
-			printf("Lua chon danh sach ma ban muon xoa phan tu dau, id bat dau tu 1\n");
+			printf("Choose the list which you want to delete the head of the list, 'id' start from 1\n");
 			scanf("%d",&id);
 			RemoveFirst(ds_list_items[id-1]);
 			break;
@@ -214,7 +214,7 @@ void demo(){
 		case 7:{
 			int id;
 			Display_List_Graphic();
-			printf("Lua chon danh sach ma ban muon xoa phan tu cuoi, id bat dau tu 1\n");
+			printf("Choose the list which you want to delete the back of the list, 'id' start from 1\n");
 			scanf("%d",&id);
 			RemoveLast(ds_list_items[id-1]);
 			break;
@@ -222,11 +222,11 @@ void demo(){
 		case 8:{
 			int id,dk,value_int;char value_chuoi[20] =""; 
 			Display_List_Graphic();
-			printf("Lua chon danh sach ma ban muon chen phan tu vua moi tao truoc do, id bat dau tu 1\n");
+			printf("Choose the list which you want to delete behind of the node, 'id' start from 1\n");
 			scanf("%d",&id);
-			printf("Nhap vao gia tri can lua chon 1->4.\n");
+			printf("Input the values 1->4.\n");
 			scanf("%d",&dk);
-			printf("Nhap gia tri.\n");
+			printf("Input the value:\n");
 			switch (dk)
 			{
 				case 1:{
@@ -258,11 +258,11 @@ void demo(){
 		case 9:{
 			int id,dk,value_int;char value_chuoi[20] =""; 
 			Display_List_Graphic();
-			printf("Lua chon danh sach ma ban muon chen phan tu vua moi tao truoc do, id bat dau tu 1\n");
+			printf("Choose the list which you want to search the node, 'id' start from 1\n");
 			scanf("%d",&id);
-			printf("Nhap vao gia tri can lua chon 1->4.\n");
+			printf("Input the values 1->4.\n");
 			scanf("%d",&dk);
-			printf("Nhap gia tri.\n");
+			printf("Input the value:\n");
 			switch (dk)
 			{
 			case 1:{
@@ -294,7 +294,7 @@ void demo(){
 		case 10:{
 			int id1,id2;
 			Display_List_Graphic();
-			printf("Lua chon lan luot danh sach ma ban muon khop, id bat dau tu 1\n");
+			printf("Merger two list, id start from 1\n");
 			scanf("%d",&id1);
 			scanf("%d",&id2);
 			PrintList(Merger2Lists(ds_list_items[id1-1],ds_list_items[id2-1]));
@@ -303,7 +303,7 @@ void demo(){
 		case 11:{
 			int id;
 			Display_List_Graphic();
-			printf("Lua chon danh sach ma ban muon hien thi, id bat dau tu 1\n");
+			printf("Display the list.\n");
 			scanf("%d",&id);
 			PrintList(ds_list_items[id-1]);
 			break;
@@ -315,7 +315,7 @@ void demo(){
 		case 13:{
 			int id;
 			Display_List_Graphic();
-			printf("Lua chon danh sach su dung selection sort theo id muon hien thi, id bat dau tu 1\n");
+			printf("Use Selection Sort Algorithm to sort the list by id.\n");
 			scanf("%d",&id);
 			SelectionSortID(ds_list_items[id-1]);
 			break;
@@ -323,13 +323,13 @@ void demo(){
 		case 14:{
 			int id;
 			Display_List_Graphic();
-			printf("Lua chon danh sach su dung quick sort theo id, id bat dau tu 1\n");
+			printf("14. Use Quick Sort Algorithm to sort the list by id.\n");
 			scanf("%d",&id);
 			QuickSortID(ds_list_items[id-1],1,ds_list_items[id-1]->n_items);
 			break;
 		}
 		default:
-			printf("Khong ton tai gia tri dinh nghia.\n");
+			printf("Don't exist the value.\n");
 			break;
 		}
 
