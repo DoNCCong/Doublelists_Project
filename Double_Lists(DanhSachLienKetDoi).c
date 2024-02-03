@@ -99,8 +99,8 @@ short Unduplicate_String_Name(char name[])
             return 1;
     }
 void info(){
-	printf("****Mindset&Coder****");
-	printf("Note: I create the code which base on the thing.");
+	printf("****Mindset&Coder****\n");
+	printf("Note: I create the code which base on the thing.\n");
 	printf("1. Init A List.\n");
 	printf("2. Init A Node.\n");
 	printf("3. Insert A Node into the head of list.\n");
